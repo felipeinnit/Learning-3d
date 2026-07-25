@@ -1,0 +1,18 @@
+{
+  "name": "2026-25-jul",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.1.1"
+  },
+  "dependencies": {
+    "motion": "^12.42.2",
+    "three": "^0.185.1"
+  }
+}
