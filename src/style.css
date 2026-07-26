@@ -11,12 +11,12 @@
 }
 
 @font-face {
-  font-family: "Bebas Neue";
-  src: url("/src/assets/fonts/BebasNeue-Regular.otf");
+  font-family: "Inter", Arial, sans-serif;
+  src: url("/src/assets/fonts/Inter-Variable-Font.woff2");
 }
 
 html {
-  font-family: "Bebas Neue", Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-size: 1.5rem;
   line-height: 1.2;
 }
@@ -27,7 +27,9 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
   height: auto;
   vertical-align: bottom;
 }
@@ -100,9 +102,38 @@ section.content {
   gap: 2rem;
   font-size: 3rem;
   margin: 3rem 0 5rem 0;
+  align-items: center;
 }
 
 section.content p {
   position: relative;
+  z-index: 2;
+  font-size: 1.75rem;
+}
+
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  color: var(--primary-color);
+  padding: 2rem;
+  font-size: 1.5rem;
+  background-color: var(--background-color);
+  z-index: 3;
+}
+
+footer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1rem;
+  margin: 3rem 0 1rem 0;
+  align-items: left;
   z-index: 2;
 }
